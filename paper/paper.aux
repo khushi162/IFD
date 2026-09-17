@@ -1,0 +1,115 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kaggle2019ieeecis}
+\citation{mcmahan2017fedavg}
+\citation{blanchard2017krum}
+\citation{farrukh2025blockchain}
+\citation{mcmahan2017fedavg}
+\citation{kairouz2021advances}
+\citation{yang2019ffd,abdulsalam2024fl}
+\citation{bhagoji2019analyzing,bagdasaryan2018backdoor}
+\citation{blanchard2017krum}
+\citation{yin2018byzantine}
+\citation{yang2019ffd}
+\citation{ulb2013ecc}
+\citation{abdulsalam2024fl}
+\citation{farrukh2025blockchain}
+\citation{blanchard2017krum}
+\citation{yin2018byzantine}
+\citation{elmhamdi2018distributed}
+\citation{cao2021fltrust}
+\citation{fung2018mitigating}
+\citation{zhang2022fldetector}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Federated Learning for Financial Fraud Detection}{1}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Byzantine-Robust Aggregation}{1}{subsection.2.2}\protected@file@percent }
+\citation{li2023multitentacle}
+\citation{chen2021rffl}
+\citation{bhagoji2019analyzing}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Gap: Temporally-Adaptive Adversaries in Finance}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Threat Model and Attack Classes}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Sign-Flip Attack}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Label-Flip Attack}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Model-Replacement Attack}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Proposed Defense: The TRAP{} Framework}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Layer 1: Norm and Cosine Filtering}{2}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Layer 2: Leave-One-Out Spectral Anomaly Detection}{2}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Layer 3: Dual-Channel Temporal CUSUM}{2}{subsection.4.3}\protected@file@percent }
+\citation{kaggle2019ieeecis}
+\citation{bonawitz2019federated}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}EWMA Reputation and Weighted Aggregation}{3}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Adaptive Threshold Controller}{3}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-F}}Algorithm}{3}{subsection.4.6}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces TRAP{} Cascade Router Aggregation}}{3}{algorithm.1}\protected@file@percent }
+\newlabel{alg:trap}{{1}{3}{Algorithm}{algorithm.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Experimental Hyperparameters (All Methods)}}{3}{table.1}\protected@file@percent }
+\newlabel{tab:hyperparams}{{I}{3}{Experimental Hyperparameters (All Methods)}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Setup}{3}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Dataset and Preprocessing}{3}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Non-IID Partitioning and FL Setup}{3}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Metrics}{3}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Results and Analysis}{3}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{VI}{3}{Results and Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Clean Baseline}{3}{subsection.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Clean baseline (no adversaries) over 50 communication rounds. \textit  {Left:} AUC-ROC. \textit  {Right:} F1-Score. TRAP achieves the highest F1 (0.409) and a competitive AUC (0.702) vs.\ FedAvg (AUC=0.685, F1=0.396) and Krum (AUC=0.649, F1=0.301). Krum exhibits high variance due to the geometric neighbour selection being sensitive to non-IID gradient distributions.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig_clean}{{1}{4}{Clean baseline (no adversaries) over 50 communication rounds. \textit {Left:} AUC-ROC. \textit {Right:} F1-Score. TRAP achieves the highest F1 (0.409) and a competitive AUC (0.702) vs.\ FedAvg (AUC=0.685, F1=0.396) and Krum (AUC=0.649, F1=0.301). Krum exhibits high variance due to the geometric neighbour selection being sensitive to non-IID gradient distributions}{figure.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Clean Baseline Final-Round Metrics (Round 50, No Adversaries)}}{4}{table.2}\protected@file@percent }
+\newlabel{tab:clean_results}{{II}{4}{Clean Baseline Final-Round Metrics (Round 50, No Adversaries)}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Robustness Under Adversarial Attacks}{4}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:robustness}{{\mbox  {VI-B}}{4}{Robustness Under Adversarial Attacks}{subsection.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Precision--Recall Analysis}{4}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Ablation Study}{4}{subsection.6.4}\protected@file@percent }
+\newlabel{sec:ablation}{{\mbox  {VI-D}}{4}{Ablation Study}{subsection.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces AUC-ROC under Sign-Flip attack. FedAvg collapses at 20\% and 40\% (final AUC=0.807/0.717 with Recall=0---all-benign collapse). TRAP is the only method that maintains non-zero F1 across all three ratios.}}{5}{figure.2}\protected@file@percent }
+\newlabel{fig_signflip}{{2}{5}{AUC-ROC under Sign-Flip attack. FedAvg collapses at 20\% and 40\% (final AUC=0.807/0.717 with Recall=0---all-benign collapse). TRAP is the only method that maintains non-zero F1 across all three ratios}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces AUC-ROC under Label-Flip attack. Krum catastrophically fails at 40\% (AUC=0.413, Recall=0.920, Precision=0.034---all-fraud collapse). TRAP and FedAvg remain partially functional, with TRAP achieving the highest F1 in all scenarios.}}{5}{figure.3}\protected@file@percent }
+\newlabel{fig_labelflip}{{3}{5}{AUC-ROC under Label-Flip attack. Krum catastrophically fails at 40\% (AUC=0.413, Recall=0.920, Precision=0.034---all-fraud collapse). TRAP and FedAvg remain partially functional, with TRAP achieving the highest F1 in all scenarios}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces AUC-ROC under Model-Replacement ($\gamma {=}10$). TRAP's Layer~1 norm filter neutralises scaled updates; TRAP achieves higher AUC than FedAvg at all three ratios. Krum shows higher AUC on this attack but inferior F1.}}{5}{figure.4}\protected@file@percent }
+\newlabel{fig_modelreplace}{{4}{5}{AUC-ROC under Model-Replacement ($\gamma {=}10$). TRAP's Layer~1 norm filter neutralises scaled updates; TRAP achieves higher AUC than FedAvg at all three ratios. Krum shows higher AUC on this attack but inferior F1}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion}{5}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Why AUC Alone Misleads in Fraud Detection}{5}{subsection.7.1}\protected@file@percent }
+\citation{kairouz2021advances}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Final-Round Performance Across All Attack Configurations (Round 50)}}{6}{table.3}\protected@file@percent }
+\newlabel{tab:attack_results}{{III}{6}{Final-Round Performance Across All Attack Configurations (Round 50)}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Final-round AUC-ROC: TRAP vs.\ FedAvg vs.\ Krum, all 10 scenarios. TRAP maintains the highest or competitive AUC consistently. FedAvg's inflated AUC under SignFlip 20--40\% is deceptive---those runs have Recall=0 (all-benign collapse).}}{6}{figure.5}\protected@file@percent }
+\newlabel{fig_auc_bar}{{5}{6}{Final-round AUC-ROC: TRAP vs.\ FedAvg vs.\ Krum, all 10 scenarios. TRAP maintains the highest or competitive AUC consistently. FedAvg's inflated AUC under SignFlip 20--40\% is deceptive---those runs have Recall=0 (all-benign collapse)}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Non-IID Data as Adversarial Camouflage}{6}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Differential Privacy Integration}{6}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{6}{section.8}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{kaggle2019ieeecis}{1}
+\bibcite{mcmahan2017fedavg}{2}
+\bibcite{blanchard2017krum}{3}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Final-round F1-Score: TRAP vs.\ FedAvg vs.\ Krum, all 10 scenarios. F1 is the most informative metric for imbalanced fraud detection. TRAP achieves the highest F1 in 8 of 10 scenarios. FedAvg collapses to F1=0 under SignFlip 20\% and 40\% (all-benign prediction). Krum collapses to F1$\approx $0.065 under LabelFlip 40\%.}}{7}{figure.6}\protected@file@percent }
+\newlabel{fig_f1_bar}{{6}{7}{Final-round F1-Score: TRAP vs.\ FedAvg vs.\ Krum, all 10 scenarios. F1 is the most informative metric for imbalanced fraud detection. TRAP achieves the highest F1 in 8 of 10 scenarios. FedAvg collapses to F1=0 under SignFlip 20\% and 40\% (all-benign prediction). Krum collapses to F1$\approx $0.065 under LabelFlip 40\%}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces AUC-ROC heatmaps. \textit  {Top row:} absolute AUC. \textit  {Bottom row:} percentage degradation relative to TRAP's clean baseline (0.702). TRAP shows strictly monotone degradation (1.4--13.8\%). FedAvg shows negative degradation under SignFlip (its AUC inflates due to benign-class collapse). Krum degrades by 41.2\% under LabelFlip 40\%.}}{7}{figure.7}\protected@file@percent }
+\newlabel{fig_heatmap}{{7}{7}{AUC-ROC heatmaps. \textit {Top row:} absolute AUC. \textit {Bottom row:} percentage degradation relative to TRAP's clean baseline (0.702). TRAP shows strictly monotone degradation (1.4--13.8\%). FedAvg shows negative degradation under SignFlip (its AUC inflates due to benign-class collapse). Krum degrades by 41.2\% under LabelFlip 40\%}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{7}{section*.2}\protected@file@percent }
+\bibcite{farrukh2025blockchain}{4}
+\bibcite{kairouz2021advances}{5}
+\bibcite{yang2019ffd}{6}
+\bibcite{abdulsalam2024fl}{7}
+\bibcite{bhagoji2019analyzing}{8}
+\bibcite{bagdasaryan2018backdoor}{9}
+\bibcite{yin2018byzantine}{10}
+\bibcite{ulb2013ecc}{11}
+\bibcite{elmhamdi2018distributed}{12}
+\bibcite{cao2021fltrust}{13}
+\bibcite{fung2018mitigating}{14}
+\bibcite{zhang2022fldetector}{15}
+\bibcite{li2023multitentacle}{16}
+\bibcite{chen2021rffl}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Precision vs.\ Recall scatter across all 14 scenarios, all three methods. Iso-F1 contours shown. TRAP clusters in the high-precision, moderate-recall region (upper-left of the F1=0.4 contour). FedAvg SignFlip 20/40\% collapse at Recall=0; Krum LabelFlip 40\% collapses at Precision$\approx $0.}}{8}{figure.8}\protected@file@percent }
+\newlabel{fig_pr}{{8}{8}{Precision vs.\ Recall scatter across all 14 scenarios, all three methods. Iso-F1 contours shown. TRAP clusters in the high-precision, moderate-recall region (upper-left of the F1=0.4 contour). FedAvg SignFlip 20/40\% collapse at Recall=0; Krum LabelFlip 40\% collapses at Precision$\approx $0}{figure.8}{}}
+\bibcite{bonawitz2019federated}{18}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Ablation study: final-round AUC-ROC. Full TRAP{} is Pareto-optimal across all four conditions. Removing Layer~3 yields a degenerate AUC=0.808 under SignFlip~20\% (all-benign collapse; see Fig.~\ref {fig_ablation_recall}).}}{9}{figure.9}\protected@file@percent }
+\newlabel{fig_ablation_auc}{{9}{9}{Ablation study: final-round AUC-ROC. Full \sysname {} is Pareto-optimal across all four conditions. Removing Layer~3 yields a degenerate AUC=0.808 under SignFlip~20\% (all-benign collapse; see Fig.~\ref {fig_ablation_recall})}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Ablation study: final-round Recall. Removing Layer~3 under SignFlip~20\% causes Recall=0 (all-benign collapse). Full TRAP{} recovers Recall=0.185, the highest among all configurations.}}{9}{figure.10}\protected@file@percent }
+\newlabel{fig_ablation_recall}{{10}{9}{Ablation study: final-round Recall. Removing Layer~3 under SignFlip~20\% causes Recall=0 (all-benign collapse). Full \sysname {} recovers Recall=0.185, the highest among all configurations}{figure.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Ablation Study: Final-Round AUC / F1 / Recall}}{10}{table.4}\protected@file@percent }
+\newlabel{tab:ablation}{{IV}{10}{Ablation Study: Final-Round AUC / F1 / Recall}{table.4}{}}
+\gdef \@abspage@last{10}

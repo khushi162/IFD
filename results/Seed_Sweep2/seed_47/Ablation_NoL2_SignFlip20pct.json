@@ -1,0 +1,47 @@
+{
+  "seed": 47,
+  "run_label": "Ablation_NoL2_SignFlip20pct",
+  "num_clients": 10,
+  "num_rounds": 50,
+  "num_adversaries": 2,
+  "attack_type": "sign_flip",
+  "losses_distributed": [
+    [
+      1,
+      0.7003852349917093
+    ]
+  ],
+  "metrics_distributed": {
+    "accuracy": [
+      [
+        1,
+        0.5683666666666667
+      ]
+    ],
+    "auc": [
+      [
+        1,
+        0.9051252280591382
+      ]
+    ],
+    "precision": [
+      [
+        1,
+        0.07594302483716268
+      ]
+    ],
+    "recall": [
+      [
+        1,
+        0.9645454545454545
+      ]
+    ],
+    "f1": [
+      [
+        1,
+        0.14080021232831266
+      ]
+    ]
+  },
+  "metrics_centralized": {}
+}

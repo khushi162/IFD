@@ -1,0 +1,13 @@
+.git
+.venv
+.planning
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+model/checkpoints/
+notebooks/
+.python-version
+data/raw
+results

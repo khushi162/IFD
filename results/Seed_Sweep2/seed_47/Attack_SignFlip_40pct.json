@@ -1,0 +1,47 @@
+{
+  "seed": 47,
+  "run_label": "Attack_SignFlip_40pct",
+  "num_clients": 10,
+  "num_rounds": 50,
+  "num_adversaries": 4,
+  "attack_type": "sign_flip",
+  "losses_distributed": [
+    [
+      1,
+      0.6354890324274699
+    ]
+  ],
+  "metrics_distributed": {
+    "accuracy": [
+      [
+        1,
+        0.9131666666666667
+      ]
+    ],
+    "auc": [
+      [
+        1,
+        0.8781479710600816
+      ]
+    ],
+    "precision": [
+      [
+        1,
+        0.23988938817836156
+      ]
+    ],
+    "recall": [
+      [
+        1,
+        0.6309090909090908
+      ]
+    ],
+    "f1": [
+      [
+        1,
+        0.3476083145504633
+      ]
+    ]
+  },
+  "metrics_centralized": {}
+}
