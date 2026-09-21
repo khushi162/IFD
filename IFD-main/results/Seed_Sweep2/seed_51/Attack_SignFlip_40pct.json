@@ -1,0 +1,11 @@
+{
+  "seed": 51,
+  "run_label": "Attack_SignFlip_40pct",
+  "num_clients": 10,
+  "num_rounds": 50,
+  "num_adversaries": 4,
+  "attack_type": "sign_flip",
+  "losses_distributed": [],
+  "metrics_distributed": {},
+  "metrics_centralized": {}
+}

@@ -1,0 +1,373 @@
+Baseline Experiment Orchestrator � IFD-PART2
+==============================================================================
+Started:      2026-09-04T05:21:58+00:00
+Baselines:    b1_fedavg, b2_krum, b6_fltrust, b8_dpfl
+Results dir:  ./results
+Num clients:  10
+Num rounds:   50
+NROWS:        150000
+==============================================================================
+
+
+### BASELINE: b1_fedavg ###
+[Ray cleanup] before b1_fedavg/CleanRun_Simple stopping local Ray...
+2026-09-04 05:22:04,950	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: CleanRun_Simple
+  STARTED:    2026-09-04T05:22:05+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label CleanRun_Simple --results-dir ./results/baselines/b1_fedavg
+==============================================================================
+[Ray cleanup] after b1_fedavg/CleanRun_Simple stopping local Ray...
+2026-09-04 05:38:51,301	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/CleanRun_Simple] SUCCESS � 16.6 min � finished 2026-09-04T05:38:51+00:00
+[Ray cleanup] before b1_fedavg/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 05:38:52,411	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_SignFlip_10pct
+  STARTED:    2026-09-04T05:38:52+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_SignFlip_10pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 1 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 05:55:09,653	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_SignFlip_10pct] SUCCESS � 16.1 min � finished 2026-09-04T05:55:10+00:00
+[Ray cleanup] before b1_fedavg/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 05:55:11,048	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_SignFlip_20pct
+  STARTED:    2026-09-04T05:55:11+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_SignFlip_20pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 06:11:28,812	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_SignFlip_20pct] SUCCESS � 16.1 min � finished 2026-09-04T06:11:29+00:00
+[Ray cleanup] before b1_fedavg/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 06:11:29,880	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_SignFlip_40pct
+  STARTED:    2026-09-04T06:11:30+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_SignFlip_40pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 4 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 06:28:09,470	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_SignFlip_40pct] SUCCESS � 16.5 min � finished 2026-09-04T06:28:09+00:00
+[Ray cleanup] before b1_fedavg/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 06:28:10,471	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_LabelFlip_10pct
+  STARTED:    2026-09-04T06:28:10+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_LabelFlip_10pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 1 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 06:44:41,430	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_LabelFlip_10pct] SUCCESS � 16.4 min � finished 2026-09-04T06:44:41+00:00
+[Ray cleanup] before b1_fedavg/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 06:44:42,568	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_LabelFlip_20pct
+  STARTED:    2026-09-04T06:44:43+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_LabelFlip_20pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 07:02:46,979	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_LabelFlip_20pct] SUCCESS � 17.9 min � finished 2026-09-04T07:02:47+00:00
+[Ray cleanup] before b1_fedavg/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 07:02:47,982	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_LabelFlip_40pct
+  STARTED:    2026-09-04T07:02:48+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_LabelFlip_40pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 4 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 07:19:50,526	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_LabelFlip_40pct] SUCCESS � 16.9 min � finished 2026-09-04T07:19:50+00:00
+[Ray cleanup] before b1_fedavg/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 07:19:51,862	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_ModelReplace_10pct
+  STARTED:    2026-09-04T07:19:52+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_ModelReplace_10pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 1 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 07:36:54,246	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_ModelReplace_10pct] SUCCESS � 16.9 min � finished 2026-09-04T07:36:54+00:00
+[Ray cleanup] before b1_fedavg/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 07:36:55,478	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_ModelReplace_20pct
+  STARTED:    2026-09-04T07:36:55+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_ModelReplace_20pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 07:50:08,761	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_ModelReplace_20pct] SUCCESS � 13.0 min � finished 2026-09-04T07:50:09+00:00
+[Ray cleanup] before b1_fedavg/Attack_ModelReplace_40pct stopping local Ray...
+2026-09-04 07:50:10,207	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b1_fedavg
+  EXPERIMENT: Attack_ModelReplace_40pct
+  STARTED:    2026-09-04T07:50:10+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b1_fedavg --run-label Attack_ModelReplace_40pct --results-dir ./results/baselines/b1_fedavg --num-adversaries 4 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b1_fedavg/Attack_ModelReplace_40pct stopping local Ray...
+2026-09-04 08:02:41,564	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b1_fedavg/Attack_ModelReplace_40pct] SUCCESS � 12.4 min � finished 2026-09-04T08:02:41+00:00
+
+### BASELINE: b2_krum ###
+[Ray cleanup] before b2_krum/CleanRun_Simple stopping local Ray...
+2026-09-04 08:02:42,585	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: CleanRun_Simple
+  STARTED:    2026-09-04T08:02:42+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label CleanRun_Simple --results-dir ./results/baselines/b2_krum
+==============================================================================
+[Ray cleanup] after b2_krum/CleanRun_Simple stopping local Ray...
+2026-09-04 08:23:11,608	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/CleanRun_Simple] SUCCESS � 20.2 min � finished 2026-09-04T08:23:12+00:00
+[Ray cleanup] before b2_krum/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 08:23:14,504	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_SignFlip_10pct
+  STARTED:    2026-09-04T08:23:15+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_SignFlip_10pct --results-dir ./results/baselines/b2_krum --num-adversaries 1 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 08:42:27,318	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_SignFlip_10pct] SUCCESS � 19.1 min � finished 2026-09-04T08:42:27+00:00
+[Ray cleanup] before b2_krum/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 08:42:28,513	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_SignFlip_20pct
+  STARTED:    2026-09-04T08:42:29+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_SignFlip_20pct --results-dir ./results/baselines/b2_krum --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 08:59:43,547	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_SignFlip_20pct] SUCCESS � 17.1 min � finished 2026-09-04T08:59:44+00:00
+[Ray cleanup] before b2_krum/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 08:59:44,971	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_SignFlip_40pct
+  STARTED:    2026-09-04T08:59:45+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_SignFlip_40pct --results-dir ./results/baselines/b2_krum --num-adversaries 4 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 09:04:45,556	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_SignFlip_40pct] SUCCESS � 4.8 min � finished 2026-09-04T09:04:45+00:00
+[Ray cleanup] before b2_krum/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 09:04:46,570	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_LabelFlip_10pct
+  STARTED:    2026-09-04T09:04:46+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_LabelFlip_10pct --results-dir ./results/baselines/b2_krum --num-adversaries 1 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 09:20:38,018	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_LabelFlip_10pct] SUCCESS � 15.7 min � finished 2026-09-04T09:20:38+00:00
+[Ray cleanup] before b2_krum/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 09:20:39,142	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_LabelFlip_20pct
+  STARTED:    2026-09-04T09:20:39+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_LabelFlip_20pct --results-dir ./results/baselines/b2_krum --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 09:36:32,863	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_LabelFlip_20pct] SUCCESS � 15.7 min � finished 2026-09-04T09:36:33+00:00
+[Ray cleanup] before b2_krum/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 09:36:33,784	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_LabelFlip_40pct
+  STARTED:    2026-09-04T09:36:33+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_LabelFlip_40pct --results-dir ./results/baselines/b2_krum --num-adversaries 4 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 09:52:43,151	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_LabelFlip_40pct] SUCCESS � 16.0 min � finished 2026-09-04T09:52:43+00:00
+[Ray cleanup] before b2_krum/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 09:52:44,092	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_ModelReplace_10pct
+  STARTED:    2026-09-04T09:52:44+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_ModelReplace_10pct --results-dir ./results/baselines/b2_krum --num-adversaries 1 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 10:08:38,373	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_ModelReplace_10pct] SUCCESS � 15.8 min � finished 2026-09-04T10:08:39+00:00
+[Ray cleanup] before b2_krum/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 10:08:39,855	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_ModelReplace_20pct
+  STARTED:    2026-09-04T10:08:40+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_ModelReplace_20pct --results-dir ./results/baselines/b2_krum --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 10:24:25,280	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_ModelReplace_20pct] SUCCESS � 15.6 min � finished 2026-09-04T10:24:25+00:00
+[Ray cleanup] before b2_krum/Attack_ModelReplace_40pct stopping local Ray...
+2026-09-04 10:24:26,191	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b2_krum
+  EXPERIMENT: Attack_ModelReplace_40pct
+  STARTED:    2026-09-04T10:24:26+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b2_krum --run-label Attack_ModelReplace_40pct --results-dir ./results/baselines/b2_krum --num-adversaries 4 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b2_krum/Attack_ModelReplace_40pct stopping local Ray...
+2026-09-04 10:40:25,396	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b2_krum/Attack_ModelReplace_40pct] SUCCESS � 15.8 min � finished 2026-09-04T10:40:25+00:00
+
+### BASELINE: b6_fltrust ###
+[Ray cleanup] before b6_fltrust/CleanRun_Simple stopping local Ray...
+2026-09-04 10:40:26,415	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: CleanRun_Simple
+  STARTED:    2026-09-04T10:40:26+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label CleanRun_Simple --results-dir ./results/baselines/b6_fltrust
+==============================================================================
+[Ray cleanup] after b6_fltrust/CleanRun_Simple stopping local Ray...
+2026-09-04 10:56:20,983	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/CleanRun_Simple] SUCCESS � 15.7 min � finished 2026-09-04T10:56:22+00:00
+[Ray cleanup] before b6_fltrust/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 10:56:23,565	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_SignFlip_10pct
+  STARTED:    2026-09-04T10:56:23+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_SignFlip_10pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 1 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_SignFlip_10pct stopping local Ray...
+2026-09-04 11:12:14,246	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_SignFlip_10pct] SUCCESS � 15.7 min � finished 2026-09-04T11:12:14+00:00
+[Ray cleanup] before b6_fltrust/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 11:12:15,252	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_SignFlip_20pct
+  STARTED:    2026-09-04T11:12:15+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_SignFlip_20pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_SignFlip_20pct stopping local Ray...
+2026-09-04 11:28:00,401	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_SignFlip_20pct] SUCCESS � 15.6 min � finished 2026-09-04T11:28:00+00:00
+[Ray cleanup] before b6_fltrust/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 11:28:01,316	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_SignFlip_40pct
+  STARTED:    2026-09-04T11:28:01+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_SignFlip_40pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 4 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_SignFlip_40pct stopping local Ray...
+2026-09-04 11:32:56,663	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_SignFlip_40pct] SUCCESS � 4.8 min � finished 2026-09-04T11:32:56+00:00
+[Ray cleanup] before b6_fltrust/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 11:32:57,933	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_LabelFlip_10pct
+  STARTED:    2026-09-04T11:32:58+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_LabelFlip_10pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 1 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_LabelFlip_10pct stopping local Ray...
+2026-09-04 11:48:57,830	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_LabelFlip_10pct] SUCCESS � 15.8 min � finished 2026-09-04T11:48:58+00:00
+[Ray cleanup] before b6_fltrust/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 11:48:58,767	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_LabelFlip_20pct
+  STARTED:    2026-09-04T11:48:58+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_LabelFlip_20pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_LabelFlip_20pct stopping local Ray...
+2026-09-04 12:05:07,891	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_LabelFlip_20pct] SUCCESS � 16.0 min � finished 2026-09-04T12:05:08+00:00
+[Ray cleanup] before b6_fltrust/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 12:05:08,811	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_LabelFlip_40pct
+  STARTED:    2026-09-04T12:05:08+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_LabelFlip_40pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 4 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_LabelFlip_40pct stopping local Ray...
+2026-09-04 12:21:18,478	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_LabelFlip_40pct] SUCCESS � 16.0 min � finished 2026-09-04T12:21:18+00:00
+[Ray cleanup] before b6_fltrust/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 12:21:22,685	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_ModelReplace_10pct
+  STARTED:    2026-09-04T12:21:22+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_ModelReplace_10pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 1 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_ModelReplace_10pct stopping local Ray...
+2026-09-04 12:37:15,043	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_ModelReplace_10pct] SUCCESS � 15.7 min � finished 2026-09-04T12:37:15+00:00
+[Ray cleanup] before b6_fltrust/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 12:37:16,018	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_ModelReplace_20pct
+  STARTED:    2026-09-04T12:37:16+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_ModelReplace_20pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after b6_fltrust/Attack_ModelReplace_20pct stopping local Ray...
+2026-09-04 12:48:44,540	INFO scripts.py:1490 -- Did not find any active Ray processes.
+[b6_fltrust/Attack_ModelReplace_20pct] SUCCESS � 11.3 min � finished 2026-09-04T12:48:44+00:00
+[Ray cleanup] before b6_fltrust/Attack_ModelReplace_40pct stopping local Ray...
+2026-09-04 12:48:45,473	INFO scripts.py:1490 -- Did not find any active Ray processes.
+
+==============================================================================
+  BASELINE:   b6_fltrust
+  EXPERIMENT: Attack_ModelReplace_40pct
+  STARTED:    2026-09-04T12:48:45+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --baseline b6_fltrust --run-label Attack_ModelReplace_40pct --results-dir ./results/baselines/b6_fltrust --num-adversaries 4 --attack-type model_replace
+==============================================================================

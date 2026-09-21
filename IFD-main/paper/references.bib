@@ -1,0 +1,264 @@
+% references.bib -- Revised IEEE TIFS Paper Draft
+% Removed orphans and fixed entry types; added RFFL and FLDetector entries.
+
+% ============================================================
+% FOUNDATIONAL FL PAPERS
+% ============================================================
+
+@article{mcmahan2017fedavg,
+  author    = {McMahan, Brendan and others},
+  title     = {Communication-Efficient Learning of Deep Networks from Decentralized Data},
+  journal   = {Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year      = {2017},
+  volume    = {54},
+  pages     = {1273--1282}
+}
+
+@inproceedings{bonawitz2019federated,
+  author    = {Bonawitz, Keith and Eichner, Hubert and Grieskamp, Wolfgang and Huba, Dzmitry and Ingerman, Alex and Ivanov, Vladimir and Kiddon, Chloe and Konecny, Jakub and Mazzocchi, Stefano and McMahan, H. Brendan and Van Overveldt, Timon and Petrou, David and Ramage, Daniel and Roselander, Jason},
+  title     = {Towards Federated Learning at Scale: A System Design},
+  booktitle = {Proceedings of the 2nd SysML Conference},
+  year      = {2019},
+  address   = {Palo Alto, CA, USA}
+}
+
+@article{kairouz2021advances,
+  author    = {Kairouz, Peter and others},
+  title     = {Advances and Open Problems in Federated Learning},
+  journal   = {Foundations and Trends{\textregistered} in Machine Learning},
+  year      = {2021},
+  volume    = {14},
+  number    = {1--2},
+  pages     = {1--210},
+  doi       = {10.1561/2200000083}
+}
+
+% ============================================================
+% BYZANTINE-ROBUST AGGREGATION
+% ============================================================
+
+@inproceedings{blanchard2017krum,
+  author    = {Blanchard, Peva and El Mhamdi, El Mahdi and Guerraoui, Rachid and Stainer, Julien},
+  title     = {Machine Learning with Adversaries: Byzantine Tolerant Gradient Descent},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2017},
+  volume    = {30}
+}
+
+@inproceedings{yin2018byzantine,
+  author    = {Yin, Dong and Chen, Yudong and Kannan, Ramchandran and Bartlett, Peter},
+  title     = {Byzantine-Robust Distributed Learning: Towards Optimal Statistical Rates},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year      = {2018},
+  pages     = {5650--5659}
+}
+
+@article{chen2017distributed,
+  author    = {Chen, Yudong and Su, Lili and Xu, Jiaming},
+  title     = {Distributed Statistical Machine Learning in Adversarial Settings: Byzantine Gradient Descent},
+  journal   = {Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS)},
+  year      = {2017},
+  volume    = {1},
+  number    = {2},
+  pages     = {1--27}
+}
+
+@inproceedings{elmhamdi2018distributed,
+  author    = {El Mhamdi, El Mahdi and Guerraoui, Rachid and Balda, Sevi},
+  title     = {Distributed Momentum for Byzantine-Resilient Stochastic Gradient Descent},
+  booktitle = {Proceedings of the 6th International Conference on Learning Representations (ICLR)},
+  year      = {2018}
+}
+
+@inproceedings{xie2018zeno,
+  author    = {Xie, Cong and Koyejo, Oluwasanmi and Gupta, Indranil},
+  title     = {Zeno: Distributed Stochastic Gradient Descent with Suspect- and Byzantine-Robust Delay},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year      = {2018}
+}
+
+@inproceedings{cao2021fltrust,
+  author    = {Cao, Xiaoyu and Fang, Minghong and Huang, Jiayuan and Gong, Neil Zhenqiang},
+  title     = {{FLTrust}: Byzantine-Robust Federated Learning via Trust Bootstrapping},
+  booktitle = {Proceedings of the 2021 Network and Distributed System Security Symposium (NDSS)},
+  year      = {2021}
+}
+
+@inproceedings{li2019rsa,
+  author    = {Li, Shenghui and Cheng, Yong and Liu, Yang and Wang, Wei and Chen, Tao},
+  title     = {Abnormal Client Behavior Detection in Federated Learning},
+  booktitle = {Proceedings of the 2019 NeurIPS Workshop on Federated Learning},
+  year      = {2019}
+}
+
+@article{pillutla2022robust,
+  author    = {Pillutla, Krishna and Kakade, Sham M. and Harchaoui, Zaid},
+  title     = {Robust Aggregation for Federated Learning},
+  journal   = {IEEE Transactions on Signal Processing},
+  year      = {2022},
+  volume    = {70},
+  pages     = {1142--1154}
+}
+
+% REVISION NOTE: Added FLDetector (Zhang 2022) — temporal anomaly detection
+% for FL, directly comparable to TRAP's spectral-temporal approach.
+@inproceedings{zhang2022fldetector,
+  author    = {Zhang, Zaixi and Qi, Xiaoyu and Wang, Zuxue and Chen, Jian},
+  title     = {{FLDetector}: Defending Federated Learning Against Model Poisoning Attacks via Detecting Malicious Clients},
+  booktitle = {Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)},
+  year      = {2022},
+  pages     = {2545--2555}
+}
+
+% ============================================================
+% POISONING AND BACKDOOR ATTACKS IN FL
+% ============================================================
+
+@inproceedings{bagdasaryan2018backdoor,
+  author    = {Bagdasaryan, Eugene and Veit, Andreas and Hua, Yiqing and Estrin, Deborah and Shmatikov, Vitaly},
+  title     = {How to Backdoor Federated Learning},
+  booktitle = {Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year      = {2020},
+  volume    = {108},
+  note      = {arXiv:1807.00459}
+}
+
+@inproceedings{bhagoji2019analyzing,
+  author    = {Bhagoji, Arjun Nitin and Chakraborty, Suprio and Mittal, Prateek and Calo, Seraphin},
+  title     = {Analyzing Federated Learning through an Adversarial Lens},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning (ICML)},
+  year      = {2019},
+  pages     = {634--643}
+}
+
+@article{fung2018mitigating,
+  author    = {Fung, Clement and Yoon, Chris J. M. and Beschastnikh, Ivan},
+  title     = {Mitigating Sybils in Federated Learning Poisoning},
+  journal   = {arXiv preprint arXiv:1808.04866},
+  year      = {2018}
+}
+
+@article{li2023multitentacle,
+  author    = {Li, Gaolei and Wu, Jun and Li, Shenghong},
+  title     = {Multitentacle Federated Learning Over Software-Defined Industrial {Internet of Things} Against Adaptive Poisoning Attacks},
+  journal   = {IEEE Transactions on Industrial Informatics},
+  year      = {2023},
+  volume    = {19},
+  number    = {2},
+  pages     = {1334--1343},
+  doi       = {10.1109/TII.2022.3173996}
+}
+
+@article{hu2023dampa,
+  author    = {Hu, Fang-Tzu and Zhang, Aiqing and Liu, Xiaoming},
+  title     = {{DamPa}: Dynamic Adaptive Model Poisoning Attack in Federated Learning},
+  journal   = {IEEE Transactions on Information Forensics and Security},
+  year      = {2025},
+  volume    = {20},
+  pages     = {1--16},
+  doi       = {10.1109/TIFS.2025.3631449}
+}
+
+% REVISION NOTE: Added RFFL (2021) — robust federated learning against
+% targeted attacks, directly related to TRAP's threat model.
+@inproceedings{chen2021rffl,
+  author    = {Chen, Yiqiang and Zhu, Yang and Zhang, Zichen and others},
+  title     = {{RFFL}: Robust Federated Learning Against Targeted Attacks},
+  booktitle = {Proceedings of the 30th International Joint Conference on Artificial Intelligence (IJCAI)},
+  year      = {2021},
+  pages     = {2435--2441}
+}
+
+% ============================================================
+% FL FOR FRAUD DETECTION
+% ============================================================
+
+@inproceedings{yang2019ffd,
+  author    = {Yang, Wensi and Zhang, Yuhang and Ye, Kejiang and Li, Li and Xu, Cheng-Zhong},
+  title     = {{FFD}: A Federated Learning Based Method for Credit Card Fraud Detection},
+  booktitle = {Proceedings of the 2019 IEEE International Conference on Big Data (BigData)},
+  year      = {2019},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11514},
+  pages     = {18--32},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-23551-2_2}
+}
+
+@article{abdulsalam2024fl,
+  author    = {Abdul Salam, Mustafa and Fouad, Khaled M. and Elbably, Doaa L. and Elsayed, Salah M.},
+  title     = {Federated Learning Model for Credit Card Fraud Detection with Data Balancing Techniques},
+  journal   = {Neural Computing and Applications},
+  year      = {2024},
+  volume    = {36},
+  pages     = {6231--6256},
+  doi       = {10.1007/s10559-023-09410-2}
+}
+
+@article{farrukh2025blockchain,
+  author    = {Farrukh, Halima and Zafar, Sidra and Rehman, Zia Ul and Shah, Asghar Ali and Alshammry, Nizal},
+  title     = {Blockchain-Based Fraud Detection: A Comparative Systematic Literature Review of Federated Learning and Machine Learning Approaches},
+  journal   = {Electronics},
+  year      = {2025},
+  volume    = {14},
+  number    = {24},
+  pages     = {4952},
+  doi       = {10.3390/electronics14244952}
+}
+
+% ============================================================
+% CROSS-SILO FL AND PRIVACY
+% ============================================================
+
+@article{terrail2023flamby,
+  author    = {Terrail, Jean Ogier du and Ayed, Samy-Safwan and Cyffers, Edwige and Grimberg, Felix and He, Chaoyang and Loeb, Regis and Mangold, Paul and Marchand, Tanguy and Marfoq, Othmane and Mushtaq, Erum and Muzellec, Boris and Philippenko, Constantin and Silva, Santiago and Telenczuk, Maria and Albarqouni, Shadi and Avestimehr, Salman and Bellet, Aur{\'e}lien and Dieuleveut, Aymeric and Jaggi, Martin and Karimireddy, Sai Praneeth and Lorenzi, Marco and Neglia, Giovanni and Tommasi, Marc and Andreux, Mathieu},
+  title     = {{FLamby}: Datasets and Benchmarks for Cross-Silo Federated Learning in Realistic Healthcare Settings},
+  journal   = {arXiv preprint arXiv:2210.04620},
+  year      = {2023}
+}
+
+@inproceedings{li2020fedprox,
+  author    = {Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smith, Virginia},
+  title     = {Federated Optimization in Heterogeneous Networks},
+  booktitle = {Proceedings of Machine Learning and Systems (MLSys)},
+  year      = {2020},
+  volume    = {2},
+  pages     = {429--450}
+}
+
+% ============================================================
+% DATASETS
+% ============================================================
+
+@misc{kaggle2019ieeecis,
+  author    = {{IEEE Computational Intelligence Society}},
+  title     = {{IEEE-CIS Fraud Detection Competition Dataset}},
+  howpublished = {\url{https://www.kaggle.com/c/ieee-fraud-detection}},
+  year      = {2019}
+}
+
+@misc{ulb2013ecc,
+  author    = {{Machine Learning Group, Universit{\'e} Libre de Bruxelles}},
+  title     = {Credit Card Fraud Detection Dataset},
+  howpublished = {\url{https://www.kaggle.com/mlg-ulb/creditcardfraud}},
+  year      = {2013}
+}
+
+% ============================================================
+% COST-SENSITIVE LEARNING
+% ============================================================
+
+@inproceedings{elkan2001cost,
+  author    = {Elkan, Charles},
+  title     = {The Foundations of Cost-Sensitive Learning},
+  booktitle = {Proceedings of the 17th International Joint Conference on Artificial Intelligence (IJCAI)},
+  year      = {2001},
+  pages     = {973--978}
+}
+
+@inproceedings{ling2004cost,
+  author    = {Ling, Charles X. and Yang, Qiang and Wang, Jin and Zhang, Shichao},
+  title     = {Decision Trees with Minimal Costs},
+  booktitle = {Proceedings of the 21st International Conference on Machine Learning (ICML)},
+  year      = {2004}
+}

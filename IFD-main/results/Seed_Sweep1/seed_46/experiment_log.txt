@@ -1,0 +1,164 @@
+IEEE TIFS Experiment Orchestrator — IFD-PART2
+==============================================================================
+Started:        2026-09-11T14:37:51+00:00
+Results dir:    ./results/seed_46
+Num clients:    10
+Num rounds:     50
+NROWS:          150000
+Batch size:     512
+Epochs/round:   10
+Ray cleanup:    enabled for local Ray
+Features:       categoricals + V-pruning(top50) + UID-aggs + log-amt
+Loss:           class-weighted BCELoss (pos_weight=n_neg/n_pos)
+Model:          FraudMLP input->128->64->1 (hidden_dim=128)
+==============================================================================
+
+[Ray cleanup] initial cleanup before experiment suite stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: initial] No Ray processes detected.
+[Ray cleanup] before experiment CleanRun_Simple stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before CleanRun_Simple] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: CleanRun_Simple
+  STARTED:    2026-09-11T14:37:53+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label CleanRun_Simple
+==============================================================================
+[Ray cleanup] after experiment CleanRun_Simple stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after CleanRun_Simple] No Ray processes detected.
+[CleanRun_Simple] SUCCESS — 11.2 min — finished 2026-09-11T14:49:10+00:00
+[Ray cleanup] before experiment Attack_SignFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_SignFlip_10pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_SignFlip_10pct
+  STARTED:    2026-09-11T14:49:11+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_SignFlip_10pct --num-adversaries 1 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_SignFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_SignFlip_10pct] No Ray processes detected.
+[Attack_SignFlip_10pct] SUCCESS — 11.0 min — finished 2026-09-11T15:00:18+00:00
+[Ray cleanup] before experiment Attack_SignFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_SignFlip_20pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_SignFlip_20pct
+  STARTED:    2026-09-11T15:00:19+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_SignFlip_20pct --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_SignFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_SignFlip_20pct] No Ray processes detected.
+[Attack_SignFlip_20pct] SUCCESS — 11.3 min — finished 2026-09-11T15:11:46+00:00
+[Ray cleanup] before experiment Attack_SignFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_SignFlip_40pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_SignFlip_40pct
+  STARTED:    2026-09-11T15:11:47+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_SignFlip_40pct --num-adversaries 4 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_SignFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_SignFlip_40pct] No Ray processes detected.
+[Attack_SignFlip_40pct] SUCCESS — 2.0 min — finished 2026-09-11T15:13:46+00:00
+[Ray cleanup] before experiment Attack_LabelFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_LabelFlip_10pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_LabelFlip_10pct
+  STARTED:    2026-09-11T15:13:47+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_LabelFlip_10pct --num-adversaries 1 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_LabelFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_LabelFlip_10pct] No Ray processes detected.
+[Attack_LabelFlip_10pct] SUCCESS — 10.8 min — finished 2026-09-11T15:24:43+00:00
+[Ray cleanup] before experiment Attack_LabelFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_LabelFlip_20pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_LabelFlip_20pct
+  STARTED:    2026-09-11T15:24:44+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_LabelFlip_20pct --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_LabelFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_LabelFlip_20pct] No Ray processes detected.
+[Attack_LabelFlip_20pct] SUCCESS — 11.2 min — finished 2026-09-11T15:36:02+00:00
+[Ray cleanup] before experiment Attack_LabelFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_LabelFlip_40pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_LabelFlip_40pct
+  STARTED:    2026-09-11T15:36:03+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_LabelFlip_40pct --num-adversaries 4 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after experiment Attack_LabelFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_LabelFlip_40pct] No Ray processes detected.
+[Attack_LabelFlip_40pct] SUCCESS — 11.2 min — finished 2026-09-11T15:47:21+00:00
+[Ray cleanup] before experiment Attack_ModelReplace_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_ModelReplace_10pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_ModelReplace_10pct
+  STARTED:    2026-09-11T15:47:22+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_ModelReplace_10pct --num-adversaries 1 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after experiment Attack_ModelReplace_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_ModelReplace_10pct] No Ray processes detected.
+[Attack_ModelReplace_10pct] SUCCESS — 11.2 min — finished 2026-09-11T15:58:40+00:00
+[Ray cleanup] before experiment Attack_ModelReplace_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_ModelReplace_20pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_ModelReplace_20pct
+  STARTED:    2026-09-11T15:58:41+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_ModelReplace_20pct --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after experiment Attack_ModelReplace_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: after Attack_ModelReplace_20pct] No Ray processes detected.
+[Attack_ModelReplace_20pct] SUCCESS — 11.0 min — finished 2026-09-11T16:09:47+00:00
+[Ray cleanup] before experiment Attack_ModelReplace_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Process snapshot: before Attack_ModelReplace_40pct] No Ray processes detected.
+
+==============================================================================
+  EXPERIMENT: Attack_ModelReplace_40pct
+  STARTED:    2026-09-11T16:09:48+00:00
+  CMD:        /app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_46 --save-model /app/model --seed 46 --run-label Attack_ModelReplace_40pct --num-adversaries 4 --attack-type model_replace
+==============================================================================

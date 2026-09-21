@@ -1,0 +1,11 @@
+{
+  "seed": 55,
+  "run_label": "Ablation_NoL2_SignFlip20pct",
+  "num_clients": 10,
+  "num_rounds": 50,
+  "num_adversaries": 2,
+  "attack_type": "sign_flip",
+  "losses_distributed": [],
+  "metrics_distributed": {},
+  "metrics_centralized": {}
+}

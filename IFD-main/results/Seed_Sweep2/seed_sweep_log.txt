@@ -1,0 +1,69 @@
+
+======================================================================
+SEED SWEEP STARTED  2026-09-12T06:15:37+00:00
+Seeds: [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55]
+======================================================================
+
+--- Seed 45 | dir: ./results/seed_45 | 2026-09-12T06:15:37+00:00 ---
+Seed  45: SUCCESS -- 225.7 min -- finished 2026-09-12T10:01:21+00:00
+
+--- Seed 46 | dir: ./results/seed_46 | 2026-09-12T10:01:21+00:00 ---
+Seed  46: SUCCESS -- 235.4 min -- finished 2026-09-12T13:56:46+00:00
+
+--- Seed 47 | dir: ./results/seed_47 | 2026-09-12T13:56:46+00:00 ---
+Seed  47: SUCCESS -- 237.2 min -- finished 2026-09-12T17:53:57+00:00
+
+--- Seed 48 | dir: ./results/seed_48 | 2026-09-12T17:53:57+00:00 ---
+
+======================================================================
+SEED SWEEP STARTED  2026-09-15T07:08:30+00:00
+Seeds: [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55]
+======================================================================
+
+--- Seed 45 | dir: ./results/seed_45 | 2026-09-15T07:08:30+00:00 ---
+Seed  45: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+
+--- Seed 46 | dir: ./results/seed_46 | 2026-09-15T07:08:31+00:00 ---
+Seed  46: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+
+--- Seed 47 | dir: ./results/seed_47 | 2026-09-15T07:08:31+00:00 ---
+Seed  47: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+
+--- Seed 48 | dir: ./results/seed_48 | 2026-09-15T07:08:31+00:00 ---
+Seed  48: SUCCESS -- 184.2 min -- finished 2026-09-15T10:12:44+00:00
+
+--- Seed 49 | dir: ./results/seed_49 | 2026-09-15T10:12:44+00:00 ---
+Seed  49: SUCCESS -- 233.1 min -- finished 2026-09-15T14:05:52+00:00
+
+--- Seed 50 | dir: ./results/seed_50 | 2026-09-15T14:05:52+00:00 ---
+Seed  50: SUCCESS -- 232.5 min -- finished 2026-09-15T17:58:23+00:00
+
+--- Seed 51 | dir: ./results/seed_51 | 2026-09-15T17:58:23+00:00 ---
+Seed  51: SUCCESS -- 236.2 min -- finished 2026-09-15T21:54:37+00:00
+
+--- Seed 52 | dir: ./results/seed_52 | 2026-09-15T21:54:37+00:00 ---
+Seed  52: SUCCESS -- 220.8 min -- finished 2026-09-16T01:35:24+00:00
+
+--- Seed 53 | dir: ./results/seed_53 | 2026-09-16T01:35:24+00:00 ---
+Seed  53: SUCCESS -- 222.6 min -- finished 2026-09-16T05:18:01+00:00
+
+--- Seed 54 | dir: ./results/seed_54 | 2026-09-16T05:18:01+00:00 ---
+Seed  54: SUCCESS -- 237.9 min -- finished 2026-09-16T09:15:53+00:00
+
+--- Seed 55 | dir: ./results/seed_55 | 2026-09-16T09:15:53+00:00 ---
+Seed  55: SUCCESS -- 254.6 min -- finished 2026-09-16T13:30:27+00:00
+
+======================================================================
+SEED SWEEP COMPLETE  2026-09-16T13:30:27+00:00
+======================================================================
+Seed  45: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+Seed  46: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+Seed  47: SUCCESS -- 0.0 min -- finished 2026-09-15T07:08:31+00:00
+Seed  48: SUCCESS -- 184.2 min -- finished 2026-09-15T10:12:44+00:00
+Seed  49: SUCCESS -- 233.1 min -- finished 2026-09-15T14:05:52+00:00
+Seed  50: SUCCESS -- 232.5 min -- finished 2026-09-15T17:58:23+00:00
+Seed  51: SUCCESS -- 236.2 min -- finished 2026-09-15T21:54:37+00:00
+Seed  52: SUCCESS -- 220.8 min -- finished 2026-09-16T01:35:24+00:00
+Seed  53: SUCCESS -- 222.6 min -- finished 2026-09-16T05:18:01+00:00
+Seed  54: SUCCESS -- 237.9 min -- finished 2026-09-16T09:15:53+00:00
+Seed  55: SUCCESS -- 254.6 min -- finished 2026-09-16T13:30:27+00:00

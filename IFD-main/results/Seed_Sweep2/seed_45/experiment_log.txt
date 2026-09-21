@@ -1,0 +1,377 @@
+
+==============================================================================
+IEEE TIFS Experiment Orchestrator
+Started: 2026-09-12T06:15:37+00:00
+Seed: 45
+Results: ./results/seed_45
+Experiments: 22
+Timeout: 180.0 min
+==============================================================================
+[Ray cleanup] initial stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ray cleanup] before CleanRun_Simple stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: CleanRun_Simple
+SEED:       45
+STARTED:    2026-09-12T06:15:46+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/CleanRun_Simple.pt --seed 45 --run-label CleanRun_Simple
+==============================================================================
+[Ray cleanup] after CleanRun_Simple stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[CleanRun_Simple] SUCCESS — 11.2 min — finished 2026-09-12T06:27:03+00:00
+[Ray cleanup] before Attack_SignFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_SignFlip_10pct
+SEED:       45
+STARTED:    2026-09-12T06:27:04+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_SignFlip_10pct.pt --seed 45 --run-label Attack_SignFlip_10pct --num-adversaries 1 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Attack_SignFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_SignFlip_10pct] SUCCESS — 11.1 min — finished 2026-09-12T06:38:20+00:00
+[Ray cleanup] before Attack_SignFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_SignFlip_20pct
+SEED:       45
+STARTED:    2026-09-12T06:38:21+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_SignFlip_20pct.pt --seed 45 --run-label Attack_SignFlip_20pct --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Attack_SignFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_SignFlip_20pct] SUCCESS — 11.1 min — finished 2026-09-12T06:49:38+00:00
+[Ray cleanup] before Attack_SignFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_SignFlip_40pct
+SEED:       45
+STARTED:    2026-09-12T06:49:39+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_SignFlip_40pct.pt --seed 45 --run-label Attack_SignFlip_40pct --num-adversaries 4 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Attack_SignFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_SignFlip_40pct] SUCCESS — 2.0 min — finished 2026-09-12T06:51:41+00:00
+[Ray cleanup] before Attack_LabelFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_LabelFlip_10pct
+SEED:       45
+STARTED:    2026-09-12T06:51:42+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_LabelFlip_10pct.pt --seed 45 --run-label Attack_LabelFlip_10pct --num-adversaries 1 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Attack_LabelFlip_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_LabelFlip_10pct] SUCCESS — 10.8 min — finished 2026-09-12T07:02:40+00:00
+[Ray cleanup] before Attack_LabelFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_LabelFlip_20pct
+SEED:       45
+STARTED:    2026-09-12T07:02:41+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_LabelFlip_20pct.pt --seed 45 --run-label Attack_LabelFlip_20pct --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Attack_LabelFlip_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_LabelFlip_20pct] SUCCESS — 11.1 min — finished 2026-09-12T07:13:57+00:00
+[Ray cleanup] before Attack_LabelFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_LabelFlip_40pct
+SEED:       45
+STARTED:    2026-09-12T07:13:58+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_LabelFlip_40pct.pt --seed 45 --run-label Attack_LabelFlip_40pct --num-adversaries 4 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Attack_LabelFlip_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_LabelFlip_40pct] SUCCESS — 11.1 min — finished 2026-09-12T07:25:15+00:00
+[Ray cleanup] before Attack_ModelReplace_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_ModelReplace_10pct
+SEED:       45
+STARTED:    2026-09-12T07:25:16+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_ModelReplace_10pct.pt --seed 45 --run-label Attack_ModelReplace_10pct --num-adversaries 1 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Attack_ModelReplace_10pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_ModelReplace_10pct] SUCCESS — 11.2 min — finished 2026-09-12T07:36:37+00:00
+[Ray cleanup] before Attack_ModelReplace_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_ModelReplace_20pct
+SEED:       45
+STARTED:    2026-09-12T07:36:38+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_ModelReplace_20pct.pt --seed 45 --run-label Attack_ModelReplace_20pct --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Attack_ModelReplace_20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_ModelReplace_20pct] SUCCESS — 11.2 min — finished 2026-09-12T07:47:57+00:00
+[Ray cleanup] before Attack_ModelReplace_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Attack_ModelReplace_40pct
+SEED:       45
+STARTED:    2026-09-12T07:47:58+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Attack_ModelReplace_40pct.pt --seed 45 --run-label Attack_ModelReplace_40pct --num-adversaries 4 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Attack_ModelReplace_40pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Attack_ModelReplace_40pct] SUCCESS — 11.1 min — finished 2026-09-12T07:59:15+00:00
+[Ray cleanup] before Ablation_NoL1_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL1_Clean
+SEED:       45
+STARTED:    2026-09-12T07:59:16+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL1_Clean.pt --seed 45 --run-label Ablation_NoL1_Clean --disable-layer1
+==============================================================================
+[Ray cleanup] after Ablation_NoL1_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL1_Clean] SUCCESS — 11.1 min — finished 2026-09-12T08:10:32+00:00
+[Ray cleanup] before Ablation_NoL1_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL1_SignFlip20pct
+SEED:       45
+STARTED:    2026-09-12T08:10:33+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL1_SignFlip20pct.pt --seed 45 --run-label Ablation_NoL1_SignFlip20pct --disable-layer1 --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL1_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL1_SignFlip20pct] SUCCESS — 11.2 min — finished 2026-09-12T08:21:51+00:00
+[Ray cleanup] before Ablation_NoL1_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL1_LabelFlip20pct
+SEED:       45
+STARTED:    2026-09-12T08:21:52+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL1_LabelFlip20pct.pt --seed 45 --run-label Ablation_NoL1_LabelFlip20pct --disable-layer1 --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL1_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL1_LabelFlip20pct] SUCCESS — 11.1 min — finished 2026-09-12T08:33:08+00:00
+[Ray cleanup] before Ablation_NoL1_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL1_ModelReplace20pct
+SEED:       45
+STARTED:    2026-09-12T08:33:09+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL1_ModelReplace20pct.pt --seed 45 --run-label Ablation_NoL1_ModelReplace20pct --disable-layer1 --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Ablation_NoL1_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL1_ModelReplace20pct] SUCCESS — 11.1 min — finished 2026-09-12T08:44:26+00:00
+[Ray cleanup] before Ablation_NoL2_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL2_Clean
+SEED:       45
+STARTED:    2026-09-12T08:44:27+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL2_Clean.pt --seed 45 --run-label Ablation_NoL2_Clean --disable-layer2
+==============================================================================
+[Ray cleanup] after Ablation_NoL2_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL2_Clean] SUCCESS — 11.1 min — finished 2026-09-12T08:55:43+00:00
+[Ray cleanup] before Ablation_NoL2_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL2_SignFlip20pct
+SEED:       45
+STARTED:    2026-09-12T08:55:44+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL2_SignFlip20pct.pt --seed 45 --run-label Ablation_NoL2_SignFlip20pct --disable-layer2 --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL2_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL2_SignFlip20pct] SUCCESS — 2.0 min — finished 2026-09-12T08:57:47+00:00
+[Ray cleanup] before Ablation_NoL2_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL2_LabelFlip20pct
+SEED:       45
+STARTED:    2026-09-12T08:57:48+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL2_LabelFlip20pct.pt --seed 45 --run-label Ablation_NoL2_LabelFlip20pct --disable-layer2 --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL2_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL2_LabelFlip20pct] SUCCESS — 10.9 min — finished 2026-09-12T09:08:48+00:00
+[Ray cleanup] before Ablation_NoL2_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL2_ModelReplace20pct
+SEED:       45
+STARTED:    2026-09-12T09:08:49+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL2_ModelReplace20pct.pt --seed 45 --run-label Ablation_NoL2_ModelReplace20pct --disable-layer2 --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Ablation_NoL2_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL2_ModelReplace20pct] SUCCESS — 7.3 min — finished 2026-09-12T09:16:10+00:00
+[Ray cleanup] before Ablation_NoL3_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL3_Clean
+SEED:       45
+STARTED:    2026-09-12T09:16:11+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL3_Clean.pt --seed 45 --run-label Ablation_NoL3_Clean --disable-layer3
+==============================================================================
+[Ray cleanup] after Ablation_NoL3_Clean stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL3_Clean] SUCCESS — 11.0 min — finished 2026-09-12T09:27:19+00:00
+[Ray cleanup] before Ablation_NoL3_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL3_SignFlip20pct
+SEED:       45
+STARTED:    2026-09-12T09:27:20+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL3_SignFlip20pct.pt --seed 45 --run-label Ablation_NoL3_SignFlip20pct --disable-layer3 --num-adversaries 2 --attack-type sign_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL3_SignFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL3_SignFlip20pct] SUCCESS — 11.3 min — finished 2026-09-12T09:38:46+00:00
+[Ray cleanup] before Ablation_NoL3_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL3_LabelFlip20pct
+SEED:       45
+STARTED:    2026-09-12T09:38:47+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL3_LabelFlip20pct.pt --seed 45 --run-label Ablation_NoL3_LabelFlip20pct --disable-layer3 --num-adversaries 2 --attack-type label_flip
+==============================================================================
+[Ray cleanup] after Ablation_NoL3_LabelFlip20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL3_LabelFlip20pct] SUCCESS — 11.1 min — finished 2026-09-12T09:50:03+00:00
+[Ray cleanup] before Ablation_NoL3_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+EXPERIMENT: Ablation_NoL3_ModelReplace20pct
+SEED:       45
+STARTED:    2026-09-12T09:50:04+00:00
+TIMEOUT:    180.0 min
+COMMAND:
+/app/.venv/bin/python train.py --num-clients 10 --num-rounds 50 --nrows 150000 --batch-size 512 --epochs-per-round 10 --results-dir ./results/seed_45 --save-model ./results/seed_45/models/Ablation_NoL3_ModelReplace20pct.pt --seed 45 --run-label Ablation_NoL3_ModelReplace20pct --disable-layer3 --num-adversaries 2 --attack-type model_replace
+==============================================================================
+[Ray cleanup] after Ablation_NoL3_ModelReplace20pct stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+[Ablation_NoL3_ModelReplace20pct] SUCCESS — 11.1 min — finished 2026-09-12T10:01:20+00:00
+[Ray cleanup] final stopping local Ray...
+Did not find any active Ray processes.
+[Ray cleanup] local Ray stopped.
+
+==============================================================================
+FINAL STATUS
+==============================================================================
+Finished: 2026-09-12T10:01:21+00:00
+Completed: 22/22
+Incomplete: 0
+
+SUCCESS: All 22 experiments completed for seed 45.
+Seed 45 already complete. Nothing to run.

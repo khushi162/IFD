@@ -1,0 +1,57 @@
+# docker-compose.yml — IFD-PART2 training
+# Works on Windows (Docker Desktop + WSL2 backend) and Linux.
+#
+# Usage:
+#   docker compose build
+#   docker compose run --rm train
+#   docker compose run --rm train python train.py --num-clients 5 --num-rounds 10
+#
+# Place IEEE-CIS CSVs in ./data/raw/ before running.
+
+services:
+  train:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ifd-part2:latest
+    # Enable GPU (requires nvidia-container-toolkit on Linux, or
+    # Docker Desktop 4.x+ with WSL2 GPU passthrough on Windows)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    shm_size: '4gb'
+    volumes:
+      # Windows paths: use forward slashes or ./relative paths
+      - ./data/raw:/app/data/raw:ro
+      - ./results:/app/results
+      - ./train.py:/app/train.py:ro
+      - ./run_experiments.py:/app/run_experiments.py:ro
+      - ./run_baselines.py:/app/run_baselines.py:ro
+      - ./experiment:/app/experiment:ro
+      - ./orchestration:/app/orchestration:ro
+      - ./baselines:/app/baselines:ro
+      - ./layers:/app/layers:ro
+      - ./attacks:/app/attacks:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Force synchronous CUDA kernel execution so errors are reported at the
+      # correct call site and don't poison subsequent unrelated API calls.
+      - CUDA_LAUNCH_BLOCKING=1
+    # Override CMD at runtime: docker compose run --rm train python train.py ...
+    command:
+      - python
+      - train.py
+      - --num-clients
+      - "10"
+      - --num-rounds
+      - "50"
+      - --batch-size
+      - "512"
+      - --epochs-per-round
+      - "2"
+      - --results-dir
+      - /app/results

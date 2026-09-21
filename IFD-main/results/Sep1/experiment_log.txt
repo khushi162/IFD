@@ -1,0 +1,33 @@
+[CleanRun_Simple] SUCCESS — 7.8 min
+[Attack_SignFlip_10pct] FAILED (rc=1) — 1.7 min
+[CleanRun_Simple] SUCCESS — 6.6 min
+[Attack_SignFlip_20pct] SUCCESS — 7.2 min
+[Attack_SignFlip_10pct] SUCCESS — 6.9 min
+[Attack_SignFlip_40pct] SUCCESS — 6.0 min
+[Attack_LabelFlip_10pct] FAILED (rc=1) — 2.4 min
+[Attack_LabelFlip_20pct] FAILED (rc=1) — 2.5 min
+[Attack_SignFlip_20pct] SUCCESS — 7.2 min
+[Attack_SignFlip_40pct] SUCCESS — 6.7 min
+[Attack_LabelFlip_40pct] SUCCESS — 7.7 min
+[Attack_ModelReplace_10pct] FAILED (rc=1) — 1.8 min
+[Attack_LabelFlip_10pct] SUCCESS — 9.4 min
+[Attack_ModelReplace_20pct] SUCCESS — 8.4 min
+[Attack_ModelReplace_40pct] FAILED (rc=1) — 0.2 min
+[CleanRun_Simple] SUCCESS — 7.9 min
+[Attack_SignFlip_10pct] SUCCESS — 8.1 min
+[Attack_SignFlip_20pct] SUCCESS — 8.0 min
+[CleanRun_Simple] SUCCESS — 7.8 min
+[Attack_SignFlip_10pct] SUCCESS — 7.6 min
+[Attack_SignFlip_20pct] SUCCESS — 7.9 min
+[Attack_SignFlip_40pct] SUCCESS — 7.9 min
+[Attack_LabelFlip_10pct] SUCCESS — 7.8 min
+[Attack_LabelFlip_20pct] SUCCESS — 7.9 min
+[Attack_LabelFlip_40pct] SUCCESS — 7.9 min
+[Attack_ModelReplace_10pct] FAILED (rc=1) — 1.0 min
+[Attack_ModelReplace_20pct] FAILED (rc=1) — 0.4 min
+[Attack_ModelReplace_40pct] FAILED (rc=1) — 0.5 min
+[Ablation_NoL1_Clean] SUCCESS — 7.4 min
+[Ablation_NoL1_SignFlip20pct] SUCCESS — 7.7 min
+[Ablation_NoL2_Clean] SUCCESS — 7.8 min
+[Ablation_NoL2_SignFlip20pct] SUCCESS — 7.8 min
+[Ablation_NoL3_Clean] SUCCESS — 8.0 min
